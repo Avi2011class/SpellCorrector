@@ -1,4 +1,4 @@
-# Service providing automatically spell checking.
+# Service providing automatic spell checking.
 
 Based on [Burkhard-Keller tree](https://dl.acm.org/doi/10.1145/362003.362025). 
 
