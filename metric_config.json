@@ -1,0 +1,39 @@
+{
+  "default": {
+    "insert_delete": 2,
+    "replace": 1,
+    "case_sensitive": false
+  },
+  "custom_insert_delete": [
+    {
+      "group": "1",
+      "cost": 5,
+      "_comment": "insertion and deletion of \"1\"space costs 5"
+    },
+    {
+      "group": "!?#$",
+      "cost": 4,
+      "_comment": "each this insertions or deletions costs 4"
+    }
+  ],
+  "custom_replace": [
+    {
+      "first_group": "5",
+      "second_group": "6",
+      "cost": 4,
+      "_comment": "replace 5 to 6 costs 4"
+    },
+    {
+      "first_group": "56",
+      "second_group": "b",
+      "cost": 5,
+      "_comment": "5->b, 6->b, b->5, b->6 costs 5"
+    },
+    {
+      "first_group": "0d",
+      "second_group": "c8",
+      "cost": 7,
+      "_comment": "0->c 0->8 d->c d->8, c->0, c->d, 8->0, 8->d costs 7"
+    }
+  ]
+}
